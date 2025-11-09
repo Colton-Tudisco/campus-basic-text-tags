@@ -60,7 +60,5 @@ mark{
 
 blockquote{
   max-width: 65ch;
-  margin: 1rem auto;
-  padding-inline: 2rem;
-  white-space: pre-line;
+  text-align: center;
 }
