@@ -1,27 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Basic HTML Text Tags</title>
-        <meta name="description" content="Beginning practice with the basic text formatting tags used in HTML5.">
-        <meta name="author" content="Colton Tudisco">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!--Comments are used to add additional information to pages that helps developers working on that code. You can also use a comment to hide content from your page.-->
-        
-<header>
-    <h1>Basic HTML Text Tags</h1>
-</header>
-<main>
-    <section>
-        <h2>Marking up Text in Blocks</h2>
-        <p>When you have text that is displayed in a block,
-             usually with multiple lines, it's considered a paragraph.
-              Paragraph text can include words or phrases that are emphasized in some way, and they can contain links and other markup used for text (but not headings).
-               Paragraphs are block-level elements.</p>
-    </section>
-</main> 
+  <head>
+    <meta charset="utf-8">
+    <title>Basic HTML Text Tags</title>
+    <meta name="author" content="Colton Tudisco">
+    <meta name="description" content="Demonstration of basic HTML text tags and semantic structure.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-    </body>
+  <body>
+    <header>
+      <h1>Basic HTML Text Tags</h1>
+    </header>
+
+    <main>
+      <!-- Page Content -->
+
+      <section>
+        <h2>Marking up Text in Blocks</h2>
+
+        <p>When you have text that is displayed in a block, usually with multiple lines, it's considered a paragraph. Paragraph text can include words or phrases that are emphasized in some way, and they can contain links and other markup used for text (but not headings). Paragraphs are <em>block-level elements</em>.</p>
+
+        <p>It may happen that you have text, like a poem, that requires some special formatting. You'd need to ensure that each line displayed at a proper length, and you can do that with line break tags. <strong>These will not be used outside of that purpose or for formatting an address or in an address tag. Don't add line breaks to paragraphs, forms, or other page elements—use CSS for styling.</strong></p>
+
+        <h3>Excerpt from <cite>The Raven</cite> - a Poem by Edgar Allan Poe</h3>
+        <p>
+          Once upon a midnight dreary, while I pondered, weak and weary,<br>
+          Over many a quaint and curious volume of forgotten lore—<br>
+          While I nodded, nearly napping, suddenly there came a tapping,<br>
+          As of some one gently rapping, rapping at my chamber door.<br>
+          “’Tis some visitor,” I muttered, “tapping at my chamber door—only this and nothing more.”
+        </p>
+      </section>
+
+      <section>
+        <h2>Marking Up Text to Convey Meaning</h2>
+
+        <p>Sometimes, you are marking up small pieces of text, including single letters and words, to convey meaning. When doing this, you want to use the most appropriate tags you can.</p>
+
+        <p>For example, if your page offered search results, it's likely that you'd want to highlight the terms the user searched for in the results you return. If the user searched for <mark>focus area</mark> and the following paragraph was returned, those words should be highlighted in that paragraph. The primary <mark>focus area</mark> must be chosen from one of the four GIT focus options. The secondary <mark>area</mark> can be any topic that best aids the student's career path.</p>
+
+        <p>We used the <b>b</b> and <i>i</i> tags above, but we haven't talked about the underline tag. These are not often used, and can confuse the user as they style text with an underline, the same way that links do by default. A good use for these is to highlight spelling errors.</p>
+
+        <p>For reference, here are common semantic building blocks: <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>.</p>
+      </section>
+
+      <section>
+        <h3>Notes</h3>
+        <p>Keep content semantic and let CSS handle presentation. Avoid using line breaks for layout; they are for content like poetry or addresses only.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+  </body>
 </html>
