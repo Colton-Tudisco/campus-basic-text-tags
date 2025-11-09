@@ -57,8 +57,3 @@ section > section{
 mark{
     background-color: var(--bright-green);
 }
-
-blockquote{
-  max-width: 65ch;
-  text-align: center;
-}
